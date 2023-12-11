@@ -1,0 +1,191 @@
+:root {
+    --dark: #092635;
+    --dark-alt :#2B2A4C;
+    --light: #F3F8FF;
+    --light-alt: #9EC8B9;
+    --first: #E26EE5;
+    --second: #7E30E1;
+    --other: #
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira sans', sans-serif;
+}
+body {
+    background-color: var(--dark-alt);
+    color: var(--light);
+}
+.app {
+    padding: 32px;
+}
+.title-class {
+    background-color: var(--dark);
+    margin: 0 15% 5% 15%;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+.section {
+    display: flex;
+    justify-content:space-between;
+}
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    padding-left: 15px;
+}
+h4 {
+    font-size: 18px;
+    color: var(--light-alt);
+    text-transform: uppercase;
+    padding: 16px;
+}
+.todo {
+    position: relative;
+    background-color: var(--dark);
+    padding: 25px;
+    margin: 0 20% 0 20%;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.todo:hover {
+    opacity: 0.8;
+}
+.todo .checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    border-radius: 999px;
+    background-image: linear-gradient(to bottom, var(--first), var(--second));
+}
+.contenair-text {
+    display: flex;
+    justify-content: flex-end;
+}
+.text {
+    padding: 10px;
+}
+
+.todo .button-container {
+    position: absolute;
+    gap: 10px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.delete-btn, .update-btn {
+    margin-top: 28px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo.selected {
+    text-decoration: line-through;
+}
+
+.add-btn {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+    background-image: linear-gradient(to bottom, var(--first), var(--second));
+}
+.add-btn:hover {
+    background-image: linear-gradient(to top, var(--first), var(--second));
+    color: white; 
+}
+
+.update-btn {
+    background-color: blue;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: darkblue;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+.todo-upp-add {
+    position: relative;
+    background-color: var(--dark);
+    padding: 25px;
+    margin: 5% 20% 0 20%;
+    border-radius: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.contenair-up-add {
+    padding: 15px 0 0 0;
+}
+.contenair-all{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.update-create {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+}
+.contain-update-create {
+    margin: 10px;
+}
+label {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.login-register {
+    position: relative;
+    background-color: var(--dark);
+    padding: 25px;
+    margin: 5% 20% 0 20%;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease; 
+    background-image: linear-gradient(to bottom, var(--first), var(--second));
+}
+.login-register:hover {
+    background-image: linear-gradient(to top, var(--first), var(--second));
+    color: white; 
+}
+
